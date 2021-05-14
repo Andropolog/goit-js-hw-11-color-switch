@@ -15,6 +15,7 @@ const randomColor = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 const colorSwitch = {
+  isActive: false,
   start() {
     if (this.isActive) return;
     this.isActive = true;
